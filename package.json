@@ -1,4 +1,5 @@
 {
+    "packageId": "",
     "name": "com.cordonez.dependencyGraph",
     "displayName": "Dependency Graph",
     "version": "1.0.0",
