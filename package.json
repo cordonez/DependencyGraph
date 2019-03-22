@@ -5,7 +5,5 @@
     "displayName": "Dependency Graph",
     "version": "1.0.0",
     "unity": "2018.3",
-    "description": "Visual tool to check asset dependencies.",
-    "keywords": ["dependency", "graph"],
-    "category": "Tools"    
+    "description": "Visual tool to check asset dependencies." 
 }
