@@ -1,11 +1,10 @@
 {
     "packageId": "",
     "resolvedPath": "",
-    "name": "com.cordonez.dependencyGraph",
+    "name": "com.cordonez.dependencygraph",
     "displayName": "Dependency Graph",
     "version": "1.0.0",
     "unity": "2018.3",
     "description": "Visual tool to check asset dependencies.",
-    "keywords": ["dependency", "graph"],
-    "category": "Tools"    
+    "keywords": ["dependency", "graph"]
 }
