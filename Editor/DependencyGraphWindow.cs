@@ -1,5 +1,6 @@
 namespace Cordonez.DependencyGraph.Editor
 {
+	using System.Linq;
 	using UnityEditor;
 	using UnityEngine;
 
@@ -17,6 +18,7 @@ namespace Cordonez.DependencyGraph.Editor
 			if (GUILayout.Button("Scan the project"))
 			{
 				DependencyGraphManager.ScanProject();
+				DependencyGraphIOUtility.Save(DependencyGraphManager.AssetCollection.Values.ToList());
 			}
 
 			DependencyGraphAssetDrawer.DrawGraphForActiveObject();
