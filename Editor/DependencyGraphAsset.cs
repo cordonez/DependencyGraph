@@ -41,5 +41,13 @@ namespace Cordonez.DependencyGraph.Editor
 				ReferencesPaths.Remove(_graphAssetPath);
 			}
 		}
+
+		internal void RemoveDependency(string _graphAssetPath)
+		{
+			if (DependenciesPaths.Contains(_graphAssetPath))
+			{
+				DependenciesPaths.Remove(_graphAssetPath);
+			}
+		}
 	}
 }

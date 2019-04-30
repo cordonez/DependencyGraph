@@ -57,7 +57,7 @@ namespace Cordonez.DependencyGraph.Editor
 				return;
 			}
 
-			DependencyGraphAsset graphAsset = DependencyGraphManager.GetSelectedAsset(activeObject);
+			DependencyGraphAsset graphAsset = DependencyGraphManager.GetSelectedAsset(AssetDatabase.GetAssetPath(activeObject));
 			if (graphAsset == null)
 			{
 				GUILayout.FlexibleSpace();

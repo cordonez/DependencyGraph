@@ -19,7 +19,6 @@ namespace Cordonez.DependencyGraph.Editor
 				DependencyGraphManager.ScanProject();
 			}
 
-			DependencyGraphManager.Update();
 			DependencyGraphAssetDrawer.DrawGraphForActiveObject();
 		}
 
