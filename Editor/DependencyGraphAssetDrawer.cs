@@ -124,7 +124,7 @@ namespace Cordonez.DependencyGraph.Editor
 			}
 
 			GUILayout.FlexibleSpace();
-			GUILayout.Label("");
+			GUILayout.Label("", "");
 			DrawRectangleBackground(_assetType);
 			DrawAssetInformation(_graphAsset);
 			DrawKnobs(_graphAsset, _assetType);
@@ -149,13 +149,12 @@ namespace Cordonez.DependencyGraph.Editor
 				GUILayout.BeginVertical();
 				{
 					UnityEngine.Object myAsset = AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(_graphAsset.Path);
+					EditorGUILayout.ObjectField(myAsset, typeof(UnityEngine.Object), false);
 					if (GUILayout.Button("Select"))
 					{
 						Selection.activeObject = myAsset;
 						EditorUtility.FocusProjectWindow();
 					}
-
-					EditorGUILayout.ObjectField(myAsset, typeof(UnityEngine.Object), false);
 				}
 				GUILayout.EndVertical();
 				GUILayout.Label("", GUILayout.MinWidth(KNOB_RADIUS));
